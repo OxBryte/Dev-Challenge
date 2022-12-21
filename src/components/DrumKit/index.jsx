@@ -11,6 +11,12 @@ import tink from '../DrumKit/sounds/tink.wav'
 
 function DrumKit() {
 
+    function removeTransition(e) {
+        if (e.propertyName !== 'transform') return; //It skips this function if transition is not a trandform
+        this.classList.remove('playing')
+        // console.log(this)    
+    }
+
     function playsound(e) {
         // console.log(e.keyCode); 
         const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
@@ -23,10 +29,6 @@ function DrumKit() {
         key.classList.add('playing')   
     }
     
-    function removeTransition(e) {
-        if (e.propertyName !== 'transform') return; //It skips this function if transition is not a trandform
-        this.classList.remove('playing');
-    }
     
     const keys = document.querySelectorAll('.key')
     keys.forEach(key => key.addEventListener('transitionend', removeTransition))
