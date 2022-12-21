@@ -1,4 +1,6 @@
-.drumkit-bg {
+/* Main style for Each task */
+
+.drumkit-bg, .clock-bg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,6 +9,8 @@
     width: 100%;
     height: 100vh;
 }
+
+/* Style for DrumKit */
 
 .key {
     padding: 15px 25px;
@@ -20,4 +24,36 @@
     color: #FFF;
     background-color: #00ADB5;
     transform: scale(1.2);
+}
+
+/* STyle for Clock */
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #00ADB5;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.clock-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    top: 50%;
+    border-radius: 10px;
+    background-color: #FFF;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
