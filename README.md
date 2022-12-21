@@ -7,3 +7,7 @@
 ## Day 1
 
 **JS Drum Kit**
+
+## Day 2
+
+**JS CSS Clock**
