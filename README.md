@@ -11,3 +11,11 @@
 ## Day 2
 
 **JS CSS Clock**
+
+## Day 3
+
+**CSS variable with JS**
+
+## Day 4
+
+**CSS variable with JS**
