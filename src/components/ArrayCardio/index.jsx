@@ -93,8 +93,8 @@ function ArrayCardio() {
     // 7. sort Exercise
     // Sort the people alphabetically by last name
     const alpha = people.sort( (lastone, nextone) => {
-        const [aLast, aFirst] = lastone.split(' , ')
-        const [bLast, bFirst] = nextone.split(' , ')
+        const [aLast] = lastone.split(' , ')
+        const [bLast] = nextone.split(' , ')
         return aLast > bLast ? 1 : -1
     })
     console.log(alpha)
