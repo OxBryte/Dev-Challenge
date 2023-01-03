@@ -1,5 +1,6 @@
 import './App.css';
 import Clock from './components/Clock';
+import CSSVJS from './components/CSSVariablesXJS';
 import DrumKit from './components/DrumKit';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="">
       <DrumKit />
       <Clock />
+      <CSSVJS />
     </div>
   );
 }

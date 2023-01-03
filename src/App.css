@@ -1,6 +1,6 @@
 /* Main style for Each task */
 
-.drumkit-bg, .clock-bg {
+.drumkit-bg, .clock-bg, .cssvjs-bg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,4 +56,40 @@
     transform-origin: 100%;
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+/* Style for CSS Variable X JS  */
+
+:root {
+    --base: #00ADB5;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+.cssvjs-bg img {
+    width: 30%;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.cssvjs-bg {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    gap: 40px;
+}
+
+.cssvjs-bg h2 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+.cssvjs-bg span {
+    color: var(--base)
 }
